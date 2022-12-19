@@ -1,11 +1,12 @@
 .Search{
   position: relative;
   width: 100%;
+  max-width: 550px;
   height: 60px;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 20px 0;
+  margin: 20px auto;
 }
 .Search__input{
   width: 90%;
@@ -31,6 +32,7 @@
   right: 5%;
   width: 100px;
   height: 40px;
+  grid-area: search;
   border: none;
   font-size: 1.5rem;
   font-weight: bold;
@@ -52,4 +54,10 @@
   background-color: var(--gray);
   box-shadow: 0 0 3px #999;
   color: var(--black);
+}
+
+@media(min-width:650px){
+  .Search{
+    margin: 0px;
+  }
 }

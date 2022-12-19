@@ -1,5 +1,7 @@
 .Map{
   width: 90%;
+  max-width: 520px;
+  grid-area: map;
   margin: 0 auto;
 }
 .Map__title{

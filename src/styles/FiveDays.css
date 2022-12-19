@@ -1,6 +1,19 @@
 .FiveDays{
   width: 90%;
+  max-width: 520px;
+  max-height: 400px;
+  grid-area: days;
+  overflow-y: scroll;
   margin: 20px auto;
+}
+.FiveDays::-webkit-scrollbar{
+  width: 10px;
+  background-color: #d3d3d3;
+  border-radius: 10px;
+}
+.FiveDays::-webkit-scrollbar-thumb{
+  background-color: #c5c5c5;
+  border-radius: 10px;
 }
 .FiveDays__title{
   font-size: 1.8rem;
@@ -8,11 +21,17 @@
   margin: 0 0 10px 20px ;
 }
 .FiveDays__content{
-  width: 100%;
+  width: 98%;
   overflow: hidden;
+
 }
 
 /* dark mode */
 .DarkMode .FiveDays__title{
   color: white;
+}
+@media(min-width:650px){
+  .FiveDays{
+    margin: 0 auto;
+  }
 }

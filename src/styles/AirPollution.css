@@ -1,5 +1,8 @@
 .AirPollution{
+  position: relative;
   width: 90%;
+  max-width: 520px;
+  grid-area: air;
   color: var(--dark-green);
   background-color: var(--white);
   border-radius: 30px;

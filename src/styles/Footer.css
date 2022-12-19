@@ -5,6 +5,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  grid-area: footer;
   border-top: 1px solid var(--dark-green);
   padding: 20px;
   margin-top: 40px;

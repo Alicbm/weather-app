@@ -1,5 +1,19 @@
 .MainContent{
+  position: relative;
   width: 90%;
+  height: auto;
+  max-width: 500px;
+  margin: 0 auto;
+}
+.MainContent__title{
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: var(--dark-green);
+  padding-left: 20px;
+  margin-bottom: 10px;
+}
+.MainContent__content{
+  width: 100%;
   height: 230px;
   display: flex;
   flex-wrap: wrap;
@@ -7,8 +21,8 @@
   background-color: var(--white);
   border-radius: 30px;
   padding: 10px;
-  margin: 0 auto;
 }
+
 .MainContent__image{
   width: 100%;
   display: flex;
@@ -47,7 +61,7 @@
 }
 .MainContent__description-content h3{
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   color: var(--dark-green);  
 }
 .MainContent__description-content p{
@@ -56,10 +70,11 @@
 }
 
 /* dark mode */
-.DarkMode .MainContent{
+.DarkMode .MainContent__content{
   background: rgba(0, 0, 0, 0.7);
   color: var(--gray);
 }
+.DarkMode .MainContent__title,
 .DarkMode .MainContent__image-temp h2,
 .DarkMode .MainContent__image-temp h2,
 .DarkMode .MainContent__description-content span,
@@ -67,5 +82,24 @@
   color: white;
 }
 
-
+@media(min-width:650px){
+  .MainContent{
+    height: 300px;
+    padding: 20px 10px;
+    margin: 20px auto;
+  }
+  .MainContent .MainContent__image-img{
+    width: 120px;
+    height: 120px;
+  }
+  .MainContent .MainContent__image-temp h2{
+    font-size: 4rem;
+  }
+  .MainContent .MainContent__image-temp p{
+    font-size: 1.5rem;
+  }
+  .MainContent__description-content p{
+    font-size: 1.2rem;
+  }
+}
 

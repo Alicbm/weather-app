@@ -5,8 +5,10 @@ import { DarkModeButton } from './DarkModeButton';
 export function LogoHead(){
   return(
     <div className="LogoHead">
-      <img className="LogoHead__logo" src={logo} alt='Logo of head'/>
-      <DarkModeButton />
+      <div className="LogoHead__content">
+        <img className="LogoHead__logo" src={logo} alt='Logo of head'/>
+        <DarkModeButton />
+      </div>
     </div>
   )
 }
