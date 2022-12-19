@@ -1,0 +1,45 @@
+.FamousCity{
+  width: 90%;
+  grid-area: famous;
+  margin: 20px auto 0 auto;
+}
+.FamousCity__title{
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: var(--dark-green);
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+.FamousCity__content{
+  display: flex;
+  overflow-x: scroll;
+}
+.FamousCity__content::-webkit-scrollbar{
+  height: 10px;
+  background-color: #d3d3d3;
+  border-radius: 10px;
+}
+.FamousCity__content::-webkit-scrollbar-thumb{
+  background-color: #c5c5c5;
+  border-radius: 10px;
+}
+.FamousCity__content .FamousCity__content-city{
+  min-width: 250px;
+  max-width: 250px;
+  height: 180px;
+  background-color: var(--gray);
+  border-radius: 30px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+}
+
+/* dark mode */
+.DarkMode .FamousCity__title{
+  color: white;
+}
+
+@media(min-width:650px){
+  .FamousCity{
+    width: 95%;
+  }
+}
