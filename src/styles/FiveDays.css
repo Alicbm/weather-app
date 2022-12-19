@@ -1,0 +1,18 @@
+.FiveDays{
+  width: 90%;
+  margin: 20px auto;
+}
+.FiveDays__title{
+  font-size: 1.8rem;
+  color: var(--dark-green);
+  margin: 0 0 10px 20px ;
+}
+.FiveDays__content{
+  width: 100%;
+  overflow: hidden;
+}
+
+/* dark mode */
+.DarkMode .FiveDays__title{
+  color: white;
+}

@@ -1,0 +1,18 @@
+.Map{
+  width: 90%;
+  margin: 0 auto;
+}
+.Map__title{
+  font-size: 1.8rem;
+  color: var(--dark-green);
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+.Map__content iframe{
+  width: 100%;
+  border-radius: 30px;
+}
+/* dark mode */
+.DarkMode .Map__title{
+color: white;
+}

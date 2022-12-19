@@ -1,0 +1,25 @@
+.LogoHead{
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(1, 24, 36, 0.902);
+  border-radius: 0 0 10px 10px;
+  padding: 0 20px;
+  z-index: 3;
+}
+.LogoHead__logo{
+  width: 140px;
+  height: 40px;
+}
+
+/* dark mode */
+.DarkMode .LogoHead{
+  background: rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 5px #505050;
+}

@@ -1,0 +1,42 @@
+.AirPollution{
+  width: 90%;
+  color: var(--dark-green);
+  background-color: var(--white);
+  border-radius: 30px;
+  margin: 30px auto;
+}
+.AirPollution__title{
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px 0;
+}
+.AirPollution .AirPollution__content{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 10px;
+}
+.contrast{
+  background-color: var(--light-green);
+}
+.AirPollution .AirPollution__content h5{
+  width: 50%;
+  font-size: 1.3rem;
+
+}
+.AirPollution .AirPollution__content p{
+  font-size: 1.2rem;
+}
+
+/* dark mode */
+.DarkMode .AirPollution{
+  color: var(--gray);
+  background: rgba(0, 0, 0, 0.7);
+}
+.DarkMode .AirPollution__title{
+  color: white;
+}
+.DarkMode .contrast{
+  background: rgba(0, 0, 0, 1);
+}
