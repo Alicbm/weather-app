@@ -103,3 +103,11 @@
   }
 }
 
+@media(min-width:1000px){
+  .DarkMode .MainContent__content{
+    background: linear-gradient(rgba(0 0 0 / 0.7), rgba(0 0 0 / 0.7)), url('../images/dark-medium.jpg');
+    background-repeat: no-repeat;
+    box-shadow: 0 0 15px #3f3f3f;
+  }
+}
+

@@ -43,3 +43,9 @@
 .DarkMode .contrast{
   background: rgba(0, 0, 0, 1);
 }
+
+@media(min-width:650px){
+  .DarkMode .AirPollution{
+    background: rgba(15, 15, 15, 0.9);
+  }
+}

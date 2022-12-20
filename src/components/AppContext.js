@@ -68,6 +68,9 @@ export function ContainerApp({ children }) {
 
   return (
     <AppContext.Provider value={{
+      apiKey,
+      mainUrl,
+
       darkMode,
       setDarkMode,
       

@@ -17,6 +17,11 @@
     transform: translateY(0px);
   }
 }
+.Description__content{
+  width: 100%;
+  max-width: 350px;
+  margin: 0 auto;
+}
 .Description__arrow{
   position: absolute;
   top: 10px;
@@ -69,6 +74,7 @@
 
 .Description__description {
   width: 90%;
+  max-width: 250px;
   font-size: 1.5rem;
   color: var(--dark-green);
   margin: 20px auto;
@@ -126,4 +132,13 @@
 .DarkMode .Description__grid-one,
 .DarkMode .Description__grid-two{
   color: var(--gray);
+}
+
+@media(min-width:1000px){
+  .DarkMode .Description{
+    background: linear-gradient(rgba(0 0 0 / 0.7), rgba(0 0 0 / 0.7)), url('../images/dark-medium.jpg');
+    background-repeat: no-repeat;
+    /* box-shadow: 0 0 10px #3f3f3f; */
+    border: 1px solid #3f3f3f;
+  }
 }
