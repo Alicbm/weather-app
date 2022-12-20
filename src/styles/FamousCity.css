@@ -14,6 +14,7 @@
 .FamousCity__content{
   display: flex;
   overflow-x: scroll;
+  margin-bottom: 10px;
 }
 .FamousCity__content::-webkit-scrollbar{
   height: 10px;
@@ -32,8 +33,27 @@
   border-radius: 30px;
   padding: 15px;
   margin-right: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
+
+/* city's Backgrounds*/
+
+.FamousCity__content .newyork{
+  background: linear-gradient(rgba(0 0 0 / 0.7), rgba(0 0 0 / 0.7)), url('../images/newyork.jpg');
+}
+.FamousCity__content .hongkong{
+  background: linear-gradient(rgba(0 0 0 / 0.7), rgba(0 0 0 / 0.7)), url('../images/hongkong.jpg');
+}
+.FamousCity__content .paris{
+  background: linear-gradient(rgba(0 0 0 / 0.7), rgba(0 0 0 / 0.7)), url('../images/paris.jpg');
+}
+.FamousCity__content .dubai{
+  background: linear-gradient(rgba(0 0 0 / 0.7), rgba(0 0 0 / 0.7)), url('../images/dubai.jpg');
+}
+.FamousCity__content .singapore{
+  background: linear-gradient(rgba(0 0 0 / 0.7), rgba(0 0 0 / 0.7)), url('../images/singapore.jpg');
+}
+
 
 /* dark mode */
 .DarkMode .FamousCity__title{

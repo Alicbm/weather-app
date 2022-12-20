@@ -33,5 +33,5 @@ body::-webkit-scrollbar-thumb{
   border-radius: 10px;
 }
 body.DarkMode{
-  background-color: #000;
+  background-color: #0e0d0d;
 }

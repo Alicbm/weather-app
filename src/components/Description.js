@@ -1,6 +1,6 @@
 import React from 'react';
 import { AppContext } from './AppContext';
-import clima from '../images/clima.png';
+// import clima from '../images/clima.png';
 import { SlArrowUp } from 'react-icons/sl'
 import { GiRaining } from 'react-icons/gi'
 import { FiWind } from 'react-icons/fi'
@@ -8,12 +8,21 @@ import { FiSun } from 'react-icons/fi'
 import { WiHumidity } from 'react-icons/wi'
 import { BsSunsetFill } from 'react-icons/bs'
 import { BsFillSunriseFill } from 'react-icons/bs'
+
+import clear from '../icons/clear.png';
+import cloud from '../icons/cloud.png';
+import mist from '../icons/mist.png';
+import rain from '../icons/rain.png';
+import snow from '../icons/snow.png';
+import thunderstorm from '../icons/thunderstorm.png';
+
 import '../styles/Description.css';
 
-export function Description({ position }) {
+export function Description({ position, numberDay }) {
   const { setInfoDay, fiveDays } = React.useContext(AppContext);
 
   const date = new Date(fiveDays?.list[position]?.dt_txt);
+  const weather = fiveDays?.list[position]?.weather[0]?.main;
 
   const day = date.toLocaleDateString('en-us', { day: 'numeric', weekday: 'short' });
   const temperature = parseInt((fiveDays?.list[position]?.main?.temp) - 273.15);
@@ -29,16 +38,30 @@ export function Description({ position }) {
   const sunsetTimestand = new Date(fiveDays?.city?.sunset);
   const sunset = `${sunsetTimestand.getHours()}:${sunsetTimestand.getMinutes()}`;
 
+  let clime;
+  if (weather === 'Clouds') {
+    clime = cloud;
+  } else if (weather === 'Thunderstorm') {
+    clime = thunderstorm;
+  } else if (weather === 'Drizzle' || weather === 'Rain') {
+    clime = rain;
+  } else if (weather === 'Snow') {
+    clime = snow;
+  } else if (weather === 'Clear') {
+    clime = clear;
+  } else {
+    clime = mist;
+  }
 
   return (
-    <div className="Description" onClick={() => setInfoDay(false)}>
+    <div className="Description" onClick={() => setInfoDay(numberDay)}>
         <SlArrowUp className='Description__arrow' />
       <div className="Description__content">
         <p className="Description__title">{day}</p>
         <div className="Description__img">
           <div className="Description__img-temp">
             <h5>{temperature}°</h5>
-            <img src={clima} alt='Weather' />
+            <img src={clime} alt='Weather' />
           </div>
           <div className="Description__img-wind">
             <div><GiRaining className='Description-icon' />{clouds}%</div>

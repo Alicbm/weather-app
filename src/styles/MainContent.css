@@ -10,6 +10,12 @@
   font-weight: bold;
   color: var(--dark-green);
   padding-left: 20px;
+}
+.MainContent__description-weather{
+  text-align: left;
+  font-size: 1.5rem;
+  color: var(--dark-green);
+  padding-left: 20px;
   margin-bottom: 10px;
 }
 .MainContent__content{
@@ -30,8 +36,8 @@
   align-items: center;
 }
 .MainContent__image .MainContent__image-img{
-  width: 100px;
-  height: 100px;
+  width: 20%;
+  min-width: 60px;
   filter: drop-shadow(-5px 5px 10px #999);
 }
 .MainContent__image .MainContent__image-temp{
@@ -71,7 +77,6 @@
 
 /* dark mode */
 .DarkMode .MainContent__content{
-  background: rgba(0, 0, 0, 0.7);
   color: var(--gray);
 }
 .DarkMode .MainContent__title,
@@ -82,15 +87,18 @@
   color: white;
 }
 
+ /* dark mode */
+ .DarkMode .MainContent__content{
+  background: linear-gradient(rgba(0 0 0 / 0.7), rgba(0 0 0 / 0.7)), url('../images/dark-medium.jpg');
+  background-repeat: no-repeat;
+  box-shadow: 0 0 15px #3f3f3f;
+}
+
 @media(min-width:650px){
   .MainContent{
     height: 300px;
     padding: 20px 10px;
-    margin: 20px auto;
-  }
-  .MainContent .MainContent__image-img{
-    width: 120px;
-    height: 120px;
+    margin: 0 auto 30px auto;
   }
   .MainContent .MainContent__image-temp h2{
     font-size: 4rem;
@@ -100,14 +108,6 @@
   }
   .MainContent__description-content p{
     font-size: 1.2rem;
-  }
-}
-
-@media(min-width:1000px){
-  .DarkMode .MainContent__content{
-    background: linear-gradient(rgba(0 0 0 / 0.7), rgba(0 0 0 / 0.7)), url('../images/dark-medium.jpg');
-    background-repeat: no-repeat;
-    box-shadow: 0 0 15px #3f3f3f;
   }
 }
 

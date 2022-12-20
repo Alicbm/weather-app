@@ -12,13 +12,11 @@ import '../styles/Home.css';
 import { FamousCity } from "./FamousCity";
 
 export function Home(){
-  const { nameCity } = React.useContext(AppContext);
 
   return(
     <div className="Home">
       <LogoHead />
       <Search />
-      {/* <h1 className="Home__title">{nameCity}</h1> */}
       <ListDays />
       <MainContent />
       <AirPollution />
