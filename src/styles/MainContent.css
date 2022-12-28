@@ -111,3 +111,8 @@
   }
 }
 
+@media(min-width:1000px){
+  .MainContent{
+    max-width: 600px;
+  }
+}

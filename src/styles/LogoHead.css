@@ -39,3 +39,13 @@
     border-radius: 0 0 20px 0;
   }
 }
+
+@media(min-width:1000px){
+  .LogoHead{
+    width: 100%;
+    position: relative;
+    background-color: var(--dark-green);
+    border-radius: 0 0 5px 5px;
+    margin-bottom: 30px;
+  }
+}

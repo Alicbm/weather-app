@@ -1,7 +1,6 @@
 .FiveDays{
   width: 90%;
   max-width: 520px;
-  max-height: 400px;
   grid-area: days;
   overflow-y: scroll;
   margin: 20px auto;
@@ -32,6 +31,17 @@
 }
 @media(min-width:650px){
   .FiveDays{
+    max-height: 400px;
     margin: 0 auto;
+  }
+}
+@media(min-width:1000px) {
+  .FiveDays {
+    width: 100%;
+    max-width: 520px;
+    max-height: 1000px;
+    grid-area: days;
+    overflow-y: scroll;
+    margin: 30px 0 auto 0;
   }
 }

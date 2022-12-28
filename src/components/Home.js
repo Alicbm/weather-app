@@ -10,13 +10,19 @@ import { Footer } from "./Footer";
 import { FiveDays } from "./FiveDays";
 import '../styles/Home.css';
 import { FamousCity } from "./FamousCity";
+import { LogoSearch } from "./LogoSearch";
 
 export function Home(){
 
   return(
     <div className="Home">
-      <LogoHead />
-      <Search />
+      <div className="Home__smart">
+        <LogoHead />
+        <Search />
+      </div>
+      <div className="Home__long">
+        <LogoSearch />
+      </div>
       <ListDays />
       <MainContent />
       <AirPollution />

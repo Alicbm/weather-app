@@ -28,13 +28,25 @@
 }
 @media(min-width:1000px){
   .Home{
-    max-width: 1000px;
-    border-radius: 50px;
-    box-shadow: 0 0 50px #999;
-    margin: 15px auto 15px auto;
+    max-width: 1200px;
+    position: relative;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 50% 25% 25%;
+    grid-template-rows: 5% 25% 5% 35% 20% 10%;
+    grid-template-areas: 
+      'logo logo logo'
+      'main air days'
+      'list air days'
+      'map map days'
+      'famous famous famous'
+      'footer footer footer'
+    ;
+    background-color: var(--background);
+    /* padding: 0px 20px 0 20px; */
   }
+  /* 
   .DarkMode .Home{
     box-shadow: 0 0 0;
-    /* box-shadow: 0 0 30px #3f3f3f; */
-  }
+  } */
 }

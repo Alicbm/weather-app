@@ -43,3 +43,12 @@
   background-color: var(--gray);
   color: var(--black);
 }
+
+@media(min-width:1000px){
+  .ListDays{
+    margin: 20px auto 0 auto;
+  }
+  .ListDays__list li{
+    margin: 0 5px 0 0;
+  }
+}

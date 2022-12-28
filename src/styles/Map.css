@@ -18,3 +18,10 @@
 .DarkMode .Map__title{
 color: white;
 }
+
+@media(min-width:1000px){
+  .Map{
+    width: 98%;
+    max-width: 850px;
+  }
+}
