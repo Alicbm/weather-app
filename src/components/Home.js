@@ -1,7 +1,7 @@
 import React from "react";
 import { LogoHead } from "./LogoHead";
 import { Search } from "./Search";
-import { LogoSearch } from "./LogoSearch";
+import { LogoSearch } from './LogoSearch';
 import { ListDays } from "./ListDays";
 import { MainContent } from "./MainContent";
 import { AirPollution } from "./AirPollution";
