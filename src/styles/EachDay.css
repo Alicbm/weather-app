@@ -8,6 +8,17 @@
   border-radius: 15px;
   margin: 5px 0;
   cursor: pointer;
+  
+  transform: translateY(50px);
+  transition: transform ease-in-out;
+  animation: each 0.5s ease forwards;
+}
+@keyframes each{
+  0%{
+    transform: translateY(50px);
+  }100%{
+    transform: translateY(0px);
+  }
 }
 .EachDay__day{
   font-size: 1.5rem;
@@ -39,7 +50,6 @@
 .EachDay__rain .EachDay__rain-icon{
   font-size: 2rem;
   margin-right: 5px;
-  /* color: var(--dark-green); */
 }
 .EachDay__arrow{
   font-size: 2rem;
@@ -53,10 +63,8 @@
 }
 .DarkMode .EachDay__day,
 .DarkMode .EachDay__temp h5,
-.DarkMode .EachDay__arrow{
-  color: white;
-}
+.DarkMode .EachDay__arrow,
 .DarkMode .EachDay__temp p,
 .DarkMode .EachDay__rain{
-  color: var(--gray);
+  color: var(--light-green);
 }

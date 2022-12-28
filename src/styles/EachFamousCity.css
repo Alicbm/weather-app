@@ -35,4 +35,8 @@
   font-size: 2rem;  
 }
 
-
+.DarkMode .EachFamousCity__image-temp h2,
+.EachFamousCity__image .EachFamousCity__image-temp p,
+.EachFamousCity__description{
+  color: var(--light-green);
+}

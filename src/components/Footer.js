@@ -1,11 +1,11 @@
 import React from 'react';
+import { AppContext } from './AppContext';
 import { BsPersonCircle } from 'react-icons/bs'
 import { BsLinkedin } from 'react-icons/bs'
 import { BsGithub } from 'react-icons/bs'
 import darkLogo from '../images/dark-blue.png';
 import whiteLogo from '../images/white.png';
 import '../styles/Footer.css';
-import { AppContext } from './AppContext';
 
 export function Footer() {
   const { darkMode } = React.useContext(AppContext);
@@ -18,10 +18,10 @@ export function Footer() {
           <p><a href="#">Who am I?</a></p>
         </li>
         <li>
-          <p><a href="#"><BsLinkedin className='Footer__list-icon' />Linkedin</a></p>
+          <p><a href="https://linkedin.com/in/alic-barandica" target='__blank'><BsLinkedin className='Footer__list-icon' />Linkedin</a></p>
         </li>
         <li>
-          <p><a href="#"><BsGithub className='Footer__list-icon' />GitHub</a></p>
+          <p><a href="https://github.com/Alicbm/weather-app" target='__blank'><BsGithub className='Footer__list-icon' />GitHub</a></p>
         </li>
       </ul>
       <div className="Footer__logo">

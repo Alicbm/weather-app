@@ -36,11 +36,11 @@
 
 /* dark mode */
 .DarkMode .Footer{
-  border-top: 1px solid var(--gray);
+  border-top: 1px solid var(--light-green);
 }
 .DarkMode .Footer__list-icon,
 .DarkMode .Footer__list li p a{
-  color: var(--gray);
+  color: var(--light-green);
 }
 
 @media(min-width:530px){

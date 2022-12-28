@@ -3,6 +3,7 @@
   width: 90%;
   height: auto;
   max-width: 500px;
+  grid-area: main;
   margin: 0 auto;
 }
 .MainContent__title{
@@ -77,25 +78,21 @@
 
 /* dark mode */
 .DarkMode .MainContent__content{
-  color: var(--gray);
+  background-color: var(--dark-gray);
 }
 .DarkMode .MainContent__title,
 .DarkMode .MainContent__image-temp h2,
-.DarkMode .MainContent__image-temp h2,
 .DarkMode .MainContent__description-content span,
 .DarkMode .MainContent__description-content h3{
-  color: white;
+  color: var(--light-green);
 }
-
- /* dark mode */
- .DarkMode .MainContent__content{
-  background: linear-gradient(rgba(0 0 0 / 0.7), rgba(0 0 0 / 0.7)), url('../images/dark-medium.jpg');
-  background-repeat: no-repeat;
-  box-shadow: 0 0 15px #3f3f3f;
+.DarkMode .MainContent__description-weather{
+  color: var(--light-green);
 }
 
 @media(min-width:650px){
   .MainContent{
+    width: 95%;
     height: 300px;
     padding: 20px 10px;
     margin: 0 auto 30px auto;

@@ -1,16 +1,15 @@
 import React from "react";
-import { AppContext } from "./AppContext";
-import { AirPollution } from "./AirPollution";
-import { ListDays } from "./ListDays";
 import { LogoHead } from "./LogoHead";
-import { MainContent } from "./MainContent";
-import { Map } from "./Map";
 import { Search } from "./Search";
-import { Footer } from "./Footer";
-import { FiveDays } from "./FiveDays";
-import '../styles/Home.css';
-import { FamousCity } from "./FamousCity";
 import { LogoSearch } from "./LogoSearch";
+import { ListDays } from "./ListDays";
+import { MainContent } from "./MainContent";
+import { AirPollution } from "./AirPollution";
+import { Map } from "./Map";
+import { FiveDays } from "./FiveDays";
+import { FamousCity } from "./FamousCity";
+import { Footer } from "./Footer";
+import '../styles/Home.css';
 
 export function Home(){
 

@@ -1,0 +1,31 @@
+  .LogoSearch {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    grid-area: logo;
+    background-color: var(--dark-green);
+    border-radius: 0 0 10px 10px;
+    z-index: 3;
+    padding: 0 20px;
+  }
+  .LogoSearch__content {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-left: 50px;
+    margin: 0 auto;
+  }
+  .LogoSearch__logo {
+    width: 140px;
+    height: 40px;
+  }
+
+  /* DarkMode */
+
+  .DarkMode .LogoSearch{
+    background-color: var(--dark-gray);
+  }

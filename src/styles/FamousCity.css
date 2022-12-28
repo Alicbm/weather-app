@@ -18,11 +18,11 @@
 }
 .FamousCity__content::-webkit-scrollbar{
   height: 10px;
-  background-color: #d3d3d3;
+  background-color: var(--light-green);
   border-radius: 10px;
 }
 .FamousCity__content::-webkit-scrollbar-thumb{
-  background-color: #c5c5c5;
+  background-color: var(--dark-green);
   border-radius: 10px;
 }
 .FamousCity__content .FamousCity__content-city{
@@ -57,11 +57,24 @@
 
 /* dark mode */
 .DarkMode .FamousCity__title{
-  color: white;
+  color: var(--light-green);
 }
-
+.DarkMode .FamousCity__content::-webkit-scrollbar{
+  width: 10px;
+  background-color: var(--black);
+  border-radius: 10px;
+}
+.DarkMode .FamousCity__content::-webkit-scrollbar-thumb{
+  background-color: var(--light-green);
+  border-radius: 10px;
+}
 @media(min-width:650px){
   .FamousCity{
     width: 95%;
+  }
+}
+@media(min-width:1000px){
+  .FamousCity{
+    width: 100%;
   }
 }

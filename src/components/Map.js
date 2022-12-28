@@ -1,6 +1,6 @@
 import React from 'react';
-import '../styles/Map.css';
 import { AppContext } from './AppContext';
+import '../styles/Map.css';
 
 export function Map() {
   const { latitude, longitude } = React.useContext(AppContext);

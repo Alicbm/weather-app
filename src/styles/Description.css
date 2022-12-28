@@ -9,11 +9,11 @@
 
   transform: translateY(-100px);
   transition: transform ease-in-out;
-  animation: description 2s ease forwards;
+  animation: description 1s ease forwards;
 }
 @keyframes description{
   0%{
-    transform: translateY(-200px);
+    transform: translateY(-100px);
   }100%{
     transform: translateY(0px);
   }
@@ -118,28 +118,21 @@
 
 /* dark mode */
 .DarkMode .Description{
-  background: linear-gradient(rgba(0 0 0 / 0.8), rgba(0 0 0 / 0.7)), url('../images/dark-medium.jpg');
-  background-position: center;
+  background-color: var(--dark-gray);
 }
 .DarkMode .Description__img-temp h5,
 .DarkMode .Description__img-wind,
 .DarkMode .Description-icon,
-.DarkMode .Description__arrow{
-  color: white;
-}
-
+.DarkMode .Description__arrow,
 .DarkMode .Description__title,
 .DarkMode .Description__description p,
 .DarkMode .Description__grid-one,
 .DarkMode .Description__grid-two{
-  color: var(--gray);
+  color: var(--light-green);
 }
 
 @media(min-width:1000px){
   .DarkMode .Description{
-    background: linear-gradient(rgba(0 0 0 / 0.7), rgba(0 0 0 / 0.7)), url('../images/dark-medium.jpg');
-    background-repeat: no-repeat;
-    /* box-shadow: 0 0 10px #3f3f3f; */
-    border: 1px solid #3f3f3f;
+    background-color: var(--dark-gray);
   }
 }

@@ -1,5 +1,5 @@
-import '../styles/FamousCity.css';
 import { EachFamousCity } from './EachFamousCity';
+import '../styles/FamousCity.css';
 
 export function FamousCity(){
 

@@ -1,6 +1,6 @@
 import React from 'react';
-import '../styles/Search.css';
 import { AppContext } from './AppContext';
+import '../styles/Search.css';
 
 export function Search(){
   const { setCitySearch } = React.useContext(AppContext);

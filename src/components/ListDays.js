@@ -1,48 +1,39 @@
 import React from 'react';
+import { AppContext } from "./AppContext";
 import '../styles/ListDays.css';
-import { AppContext } from './AppContext';
 
 export function ListDays (){
-  const { setNameCache } = React.useContext(AppContext);
-
-  const daySelect = (id, version) => {
-    document.querySelector('.active').classList.remove('active');
-    const day = document.getElementById(id);
-    day.classList.add('active');
-    }
+  
+  const {
+    day1,
+    setDay1,
+    day2,
+    setDay2,
+    day3,
+    setDay3,
+    day4,
+    setDay4,
+    day5,
+    setDay5,
+    daySelect
+  } = React.useContext(AppContext);
 
   return(
     <div className="ListDays">
       <ul className="ListDays__list">
-        <li 
-        className='active'
-        id='dayOne'
-        onClick={() => daySelect('dayOne')}
-        >
+        <li className='active'id='dayOne'onClick={() => daySelect('dayOne', !day1, setDay1)}>
           Today
         </li>
-        <li 
-        id='dayTwo'
-        onClick={() => daySelect('dayTwo')}
-        >
+        <li id='dayTwo'onClick={() => daySelect('dayTwo', day2, setDay2)}>
           Tomorrow
         </li>
-        <li 
-        id='dayThree'
-        onClick={() => daySelect('dayThree')}
-        >
+        <li id='dayThree'onClick={() => daySelect('dayThree', day3, setDay3)}>
           Day 3
         </li>
-        <li 
-        id='dayFour'
-        onClick={() => daySelect('dayFour')}
-        >
+        <li id='dayFour'onClick={() => daySelect('dayFour', day4, setDay4)}>
           Day 4
         </li>
-        <li 
-        id='dayFive'
-        onClick={() => daySelect('dayFive')}
-        >
+        <li id='dayFive'onClick={() => daySelect('dayFive', day5, setDay5)}>
           Day 5
         </li>
       </ul>

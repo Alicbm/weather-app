@@ -30,23 +30,26 @@
   cursor: pointer;
 }
 .active{
-  color: var(--light-green);
-  background-color: var(--dark-green);
-  border-radius: 20px;
+  font-weight: bold;
+  color: var(--dark-green);
+  border-bottom: 3px solid var(--dark-green);
 }
 
 /* dark mode */
 .DarkMode .ListDays__list{
-  color: var(--gray);
+  color: var(--light-green);
 }
 .DarkMode .active{
-  background-color: var(--gray);
-  color: var(--black);
+  font-weight: bold;
+  color: var(--light-green);
+  border-bottom: 3px solid var(--light-green);
 }
 
 @media(min-width:1000px){
   .ListDays{
-    margin: 20px auto 0 auto;
+    width: 100%;
+    max-width: 500px;
+    margin: 30px auto 0 30px;
   }
   .ListDays__list li{
     margin: 0 5px 0 0;

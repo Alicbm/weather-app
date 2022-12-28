@@ -8,16 +8,28 @@ export function ContainerApp({ children }) {
   const locationName = process.env.REACT_APP_LOCATION_NAME;
 
   const [darkMode, setDarkMode] = React.useState(false);
+
   const [infoDay, setInfoDay] = React.useState(false);
   const [citySearch, setCitySearch] = React.useState('londres');
+
   const [latitude, setLatitude] = React.useState(51.5073219);
   const [longitude, setLlongitude] = React.useState(-0.1276474);
+
   const [nameCity, setNameCity] = React.useState();
   const [infoCity, setInfoCity] = React.useState();
   const [fiveDays, setFiveDays] = React.useState();
+
   const [sunrise, setSunrise] = React.useState(1671350518);
   const [sunset, setSunset] = React.useState(1671378729);
+
   const [airPollution, setAirPollution] = React.useState();
+
+  const [day1, setDay1] = React.useState(true);
+  const [day2, setDay2] = React.useState(false);
+  const [day3, setDay3] = React.useState(false);
+  const [day4, setDay4] = React.useState(false);
+  const [day5, setDay5] = React.useState(false);
+
 
   React.useEffect(() => {
     const handleCoordinates = async () => {
@@ -68,6 +80,14 @@ export function ContainerApp({ children }) {
     sunset]
   );
 
+  const daySelect = (id, state, setState) => {
+    const day = document.getElementById(id);
+    day.classList.value === 'active' && day.id !== 'dayOne'
+      ? day.classList.remove('active') : day.classList.add('active');
+
+    setState(!state)
+  }
+
   if (darkMode) {
     document.querySelector('body').classList.add('DarkMode');
   } else {
@@ -96,6 +116,19 @@ export function ContainerApp({ children }) {
 
       citySearch,
       setCitySearch,
+
+      day1,
+      setDay1,
+      day2,
+      setDay2,
+      day3,
+      setDay3,
+      day4,
+      setDay4,
+      day5,
+      setDay5,
+
+      daySelect,
     }}>
       {children}
     </AppContext.Provider>

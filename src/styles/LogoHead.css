@@ -27,8 +27,7 @@
 
 /* dark mode */
 .DarkMode .LogoHead{
-  background: rgba(0, 0, 0, 0.5);
-  box-shadow: 0 0 5px #505050;
+  background: var(--dark-gray);
 }
 
 @media(min-width:650px){
