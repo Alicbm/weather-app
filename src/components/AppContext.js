@@ -33,7 +33,7 @@ export function ContainerApp({ children }) {
 
   React.useEffect(() => {
     const handleCoordinates = async () => {
-      const res = await fetch(`${process.env.REACT_APP_LOCATION_NAME}${citySearch}&appid=${process.env.REACT_APP_KEY}`);
+      const res = await fetch(`${locationName}${citySearch}&appid=${apiKey}`);
       const json = await res.json();
 
       setLatitude(json[0].lat);
