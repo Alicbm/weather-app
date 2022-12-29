@@ -15,7 +15,7 @@ export function ContainerApp({ children }) {
   const [latitude, setLatitude] = React.useState(51.5073219);
   const [longitude, setLlongitude] = React.useState(-0.1276474);
 
-  const [nameCity, setNameCity] = React.useState();
+  const [nameCity, setNameCity] = React.useState(citySearch);
   const [infoCity, setInfoCity] = React.useState();
   const [fiveDays, setFiveDays] = React.useState();
 
