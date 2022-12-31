@@ -1,5 +1,6 @@
 .FamousCity{
   width: 90%;
+  max-width: 500px;
   grid-area: famous;
   overflow: hidden;
   margin: 20px auto 0 auto;
@@ -71,6 +72,7 @@
 @media(min-width:650px){
   .FamousCity{
     width: 95%;
+    max-width: 1300px;
   }
 }
 @media(min-width:1000px){

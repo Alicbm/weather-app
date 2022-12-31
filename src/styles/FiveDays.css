@@ -1,6 +1,6 @@
 .FiveDays{
   width: 90%;
-  max-width: 520px;
+  max-width: 450px;
   grid-area: days;
   overflow-y: scroll;
   margin: 20px auto;
@@ -15,9 +15,10 @@
   border-radius: 10px;
 }
 .FiveDays__title{
+  width: 60%;
   font-size: 1.8rem;
   color: var(--dark-green);
-  margin: 0 0 10px 20px ;
+  margin: 0 auto 10px auto ;
 }
 .FiveDays__content{
   width: 98%;

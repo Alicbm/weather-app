@@ -82,7 +82,7 @@ export function ContainerApp({ children }) {
 
   const daySelect = (id, state, setState) => {
     const day = document.getElementById(id);
-    day.classList.value === 'active' && day.id !== 'dayOne'
+    day.classList.value === 'active'
       ? day.classList.remove('active') : day.classList.add('active');
 
     setState(!state)

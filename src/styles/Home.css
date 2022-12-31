@@ -15,7 +15,7 @@
   .Home{
     position: relative;
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 60% 40%;
     grid-template-rows: 80px 320px 80px 450px 270px 80px;
     grid-template-areas: 
       'logo logo'

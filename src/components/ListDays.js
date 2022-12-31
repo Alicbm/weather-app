@@ -21,20 +21,30 @@ export function ListDays (){
   return(
     <div className="ListDays">
       <ul className="ListDays__list">
-        <li className='active'id='dayOne'onClick={() => daySelect('dayOne', !day1, setDay1)}>
-          Today
+        <li className='active'id='dayOne'onClick={() => daySelect('dayOne', day1, setDay1)}>
+          <a href='#one'>
+            Today
+          </a>
         </li>
         <li id='dayTwo'onClick={() => daySelect('dayTwo', day2, setDay2)}>
-          Tomorrow
+          <a href='#two'>
+            Tomorrow
+          </a>
         </li>
         <li id='dayThree'onClick={() => daySelect('dayThree', day3, setDay3)}>
-          Day 3
+          <a href='#three'>
+            Day 3
+          </a>
         </li>
         <li id='dayFour'onClick={() => daySelect('dayFour', day4, setDay4)}>
-          Day 4
+          <a href='#four'>
+            Day 4
+          </a>
         </li>
         <li id='dayFive'onClick={() => daySelect('dayFive', day5, setDay5)}>
-          Day 5
+          <a href='#five'>
+            Day 5
+          </a>
         </li>
       </ul>
     </div>

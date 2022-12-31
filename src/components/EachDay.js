@@ -11,7 +11,7 @@ export function EachDay({ position, numberDay }){
   const weather = fiveDays?.list[position]?.weather[0]?.main;
 
   const { clime } = useIconWeather(weather);  
-  
+  console.log(fiveDays);
   const {
     day,
     minTemperature,

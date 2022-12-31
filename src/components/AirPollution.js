@@ -14,6 +14,8 @@ export function AirPollution(){
 
   return(
     <div className="AirPollution">
+
+      <div className='AirPollution__container'>
       <h2 className="AirPollution__title">Air Pollution</h2>
       <div className='AirPollution__content contrast'>
         <h5>Carbon Monoxide</h5>
@@ -38,6 +40,7 @@ export function AirPollution(){
       <div className='AirPollution__content'>
         <h5>Ammonia</h5>
         <p>{ammonia} μg/m3</p>
+      </div>
       </div>
 
     </div>

@@ -1,6 +1,6 @@
 .Map{
   width: 90%;
-  max-width: 520px;
+  max-width: 450px;
   grid-area: map;
   margin: 0 auto;
 }
@@ -18,7 +18,12 @@
 .DarkMode .Map__title{
 color: white;
 }
-
+@media(min-width:650px){
+  .Map{
+    width: 98%;
+    max-width: 600px;
+  }
+}
 @media(min-width:1000px){
   .Map{
     width: 98%;

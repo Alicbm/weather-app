@@ -1,7 +1,7 @@
 .AirPollution {
   position: relative;
   width: 90%;
-  max-width: 520px;
+  max-width: 450px;
   grid-area: air;
   color: var(--dark-green);
   background-color: var(--white);
@@ -53,6 +53,6 @@
 
 @media(min-width:650px) {
   .AirPollution {
-    max-width: 350px;
+    max-width: 310px;
   }
 }

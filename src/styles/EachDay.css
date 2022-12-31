@@ -6,7 +6,7 @@
   align-items: center;
   background-color: var(--white);
   border-radius: 15px;
-  margin: 5px 0;
+  margin: 5px auto;
   cursor: pointer;
   
   transform: translateY(50px);
@@ -67,4 +67,15 @@
 .DarkMode .EachDay__temp p,
 .DarkMode .EachDay__rain{
   color: var(--light-green);
+}
+@media(min-width:650px){
+  .EachDay{
+    width: 100%;
+    max-width: 310px;
+  }
+}
+@media(min-width:1000px){
+  .EachDay{
+    min-width: 280px;
+  }
 }

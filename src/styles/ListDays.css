@@ -29,6 +29,10 @@
   padding: 5px;
   cursor: pointer;
 }
+.ListDays__list li a{
+  text-decoration: none;
+  color: var(--dark-green);
+}
 .active{
   font-weight: bold;
   color: var(--dark-green);
